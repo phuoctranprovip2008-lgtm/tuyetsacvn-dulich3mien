@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miền Trung | Tuyệt Sắc Việt Nam — Hồn thiêng dải đất · Nhóm 8</title>
+  <meta name="description" content="Khám phá Miền Trung Việt Nam — Phố cổ Hội An lung linh đèn lồng, Cố đô Huế uy nghiêm và Cầu Vàng Đà Nẵng giữa mây trời.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/region.css">
+</head>
+<body class="page-trung">
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lb-close" aria-label="Đóng">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Ảnh trước">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Ảnh sau">›</button>
+    <img id="lb-img" src="" alt="">
+    <div class="lightbox-caption" id="lb-caption"></div>
+  </div>
+</div>
+
+<nav class="navbar region-trung" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span>🇻🇳</span><span>Tuyệt Sắc Việt Nam</span></a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+      <li><a href="mien-bac.html" class="nav-link nav-link-bac"><span class="nav-dot"></span>Miền Bắc</a></li>
+      <li><a href="mien-trung.html" class="nav-link active nav-link-trung"><span class="nav-dot"></span>Miền Trung</a></li>
+      <li><a href="mien-nam.html" class="nav-link nav-link-nam"><span class="nav-dot"></span>Miền Nam</a></li>
+      <li><a href="thanh-vien.html" class="nav-link nav-link-members">👥 Thành viên</a></li>
+      <li><a href="#destinations" class="nav-link nav-cta">Xem địa danh ↓</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="region-hero" data-region="trung">
+  <div class="region-hero-bg" style="background-image:url('images/cauvang3.jpg')"></div>
+  <div class="region-hero-overlay"></div>
+  <div class="region-hero-content">
+    <div class="region-hero-inner">
+      <nav class="region-breadcrumb"><a href="index.html">Trang chủ</a><span class="breadcrumb-sep">›</span><span>Miền Trung</span></nav>
+      <span class="region-hero-tag tag-bg-trung">🌸 Miền Trung Việt Nam</span>
+      <h1 class="region-hero-title">Miền Trung</h1>
+      <p class="region-hero-subtitle">Nguồn: Sun Group</p>
+    </div>
+  </div>
+</section>
+
+<div class="filter-section">
+  <div class="filter-inner">
+    <span class="filter-label">Lọc:</span>
+    <button class="filter-btn active" data-filter="all">🗺 Tất cả</button>
+    <button class="filter-btn" data-filter="bien-dao">🏖 Biển &amp; Đảo</button>
+    <button class="filter-btn" data-filter="nui-rung">🏔 Núi &amp; Rừng</button>
+    <button class="filter-btn" data-filter="di-san">🏛 Di sản</button>
+    <button class="filter-btn" data-filter="song-ho">🛶 Sông &amp; Hồ</button>
+  </div>
+</div>
+
+<div class="region-intro" data-region="trung">
+  <div class="region-intro-inner">
+    <p class="region-intro-text reveal">"Miền Trung là nơi dải đất hẹp nhất — chỉ vài chục cây số từ biển đến núi — nhưng lại chứa đựng chiều sâu lịch sử và văn hóa dày đặc nhất của cả đất nước."</p>
+  </div>
+</div>
+
+<div class="best-time-section" data-region="trung">
+  <div class="best-time-inner reveal">
+    <div class="best-time-title">Thời điểm đẹp nhất để đến Miền Trung</div>
+    <div class="month-bar">
+      <div class="month-item peak" data-month="1"><span class="month-name">T.1</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="2"><span class="month-name">T.2</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="3"><span class="month-name">T.3</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="4"><span class="month-name">T.4</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item good" data-month="5"><span class="month-name">T.5</span><span class="month-status">Khá</span></div>
+      <div class="month-item low" data-month="6"><span class="month-name">T.6</span><span class="month-status">Nóng</span></div>
+      <div class="month-item low" data-month="7"><span class="month-name">T.7</span><span class="month-status">Nóng</span></div>
+      <div class="month-item low" data-month="8"><span class="month-name">T.8</span><span class="month-status">Nóng</span></div>
+      <div class="month-item good" data-month="9"><span class="month-name">T.9</span><span class="month-status">Khá</span></div>
+      <div class="month-item low" data-month="10"><span class="month-name">T.10</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="11"><span class="month-name">T.11</span><span class="month-status">Mưa</span></div>
+      <div class="month-item good" data-month="12"><span class="month-name">T.12</span><span class="month-status">Khá</span></div>
+    </div>
+    <div class="best-time-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--trung)"></div>Tháng đẹp nhất (T.1–T.4)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--trung-light)"></div>Khá đẹp</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--off-white);border:1px solid var(--border)"></div>Không lý tưởng</div>
+    </div>
+  </div>
+</div>
+
+<section class="cards-section" id="destinations" data-region="trung">
+  <div class="cards-grid">
+    <article class="dest-card reveal" data-category="di-san" id="hoian">
+      <div class="card-img-wrap">
+        <img src="images/hoi-an1.jpg" alt="Phố cổ Hội An đêm đèn lồng" loading="lazy">
+        <span class="season-badge" data-months="1,2,3,4,9"></span>
+        <span class="card-category-tag">Nguồn: VnTrip</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 01 — Miền Trung</div>
+        <h2 class="card-title">Phố Cổ Hội An</h2>
+        <p class="card-slogan">Nơi đèn lồng thắp sáng cả một đời người.</p>
+        <p class="card-desc">Khu phố cổ 400 năm tuổi còn nguyên vẹn kiến trúc giao thoa Nhật–Hoa–Việt. Đêm rằm tắt điện thắp đèn lồng — một trong những trải nghiệm đêm đẹp nhất châu Á.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Món Cao Lầu chỉ ngon đúng vị khi nấu bằng nước từ <strong>giếng Bá Lễ cổ</strong> trong phố cổ.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#hoian-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Quảng Nam</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-1" data-category="di-san" id="hue">
+      <div class="card-img-wrap">
+        <img src="images/CODOHUE1.jpg" alt="Cổng Ngọ Môn Huế" loading="lazy">
+        <span class="season-badge" data-months="2,3,4,7,8"></span>
+        <span class="card-category-tag">Nguồn: Vacation Travel</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 02 — Miền Trung</div>
+        <h2 class="card-title">Cố Đô Huế</h2>
+        <p class="card-slogan">Kinh thành cuối cùng, nơi triều đại ngủ yên giữa khói nhang.</p>
+        <p class="card-desc">Đại Nội 500 héc-ta, 7 lăng tẩm hoàng đế dọc sông Hương, 5 đàn tế lễ và hàng trăm công trình kiến trúc triều Nguyễn còn sót lại — tất cả kể câu chuyện của 143 năm vương triều.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Ẩm thực Huế được xếp hạng <strong>tinh tế nhất Việt Nam</strong> — xuất phát từ bếp hoàng cung.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#hue-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Thừa Thiên Huế</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-2" data-category="bien-dao" id="danang">
+      <div class="card-img-wrap">
+        <img src="images/cauvang1.jpg" alt="Cầu Vàng Đà Nẵng trong mây" loading="lazy">
+        <span class="season-badge" data-months="3,4,5,6,7,8"></span>
+        <span class="card-category-tag">Nguồn: VnExpress</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 03 — Miền Trung</div>
+        <h2 class="card-title">Đà Nẵng &amp; Cầu Vàng</h2>
+        <p class="card-slogan">Nơi đôi bàn tay khổng lồ nâng bạn lên tận mây.</p>
+        <p class="card-desc">Cầu Vàng 150m được đỡ bởi đôi bàn tay đá rêu xanh cổ kính ở độ cao 1.400m. Đà Nẵng còn có bãi biển Mỹ Khê đẹp nhất châu Á và Ngũ Hành Sơn kỳ bí.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Đà Nẵng <strong>4 năm liên tiếp</strong> là thành phố đáng sống nhất Việt Nam — không phải vì du lịch, mà vì chất lượng sống thực sự.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#danang-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Đà Nẵng</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="detail-section" data-region="trung">
+  <div class="detail-block reveal" id="hoian-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/hoi-an1.jpg" data-alt="Hội An 1" data-caption="Nguồn: VnTrip">
+          <img src="images/hoi-an1.jpg" alt="Hội An 1" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/hoi-an2.jpg" data-alt="Hội An 2" data-caption="Nguồn: VnExpress">
+          <img src="images/hoi-an2.jpg" alt="Hội An 2" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/hoi-an3.jpg" data-alt="Hội An 3" data-caption="Nguồn: Du Lịch Dế Mèn">
+          <img src="images/hoi-an3.jpg" alt="Hội An 3" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 01 • Phố Cổ Hội An</div>
+      <h2 class="detail-title">Phố Cổ Hội An</h2>
+      <p class="detail-slogan">✦ Nơi đèn lồng thắp sáng cả một đời người. ✦</p>
+      <p class="detail-body">Hội An từng là thương cảng sầm uất thế kỷ 15–19, nơi tàu buôn Nhật, Trung, Hà Lan và Bồ Đào Nha neo đậu. Chính sự giao thoa đó tạo nên kiến trúc độc đáo: mái ngói âm dương, cột gỗ chạm khắc, hội quán Hoa kiều, nhà ống kết hợp nét Nhật và Việt.</p>
+      <p class="detail-body">Khi mặt trời lặn, điện tắt, đèn lồng đỏ rực thắp lên — cả khu phố cổ trở thành một thế giới khác. Ánh đèn phản chiếu xuống sông Hoài tạo vệt vàng đỏ lung linh. Tiếng nhạc cụ truyền thống lơ đễnh trong gió đêm.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Mỗi đêm 14 âm lịch (đêm rằm), Hội An tổ chức "Đêm Phố Cổ" — tắt toàn bộ đèn điện, chỉ thắp đèn lồng. Và món Cao Lầu chỉ ngon đúng vị khi nấu bằng nước từ giếng Bá Lễ cổ trong phố — không giải thích được về mặt khoa học, nhưng đó là thực tế.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🌙</div><div class="tip-title">Đêm rằm Phố Cổ</div><div class="tip-desc">Lịch đêm rằm âm lịch — kiểm tra trước để đúng ngày tắt điện thắp đèn lồng.</div></div>
+        <div class="tip-card"><div class="tip-icon">🚲</div><div class="tip-title">Khám phá bằng xe đạp</div><div class="tip-desc">Thuê xe đạp đạp ra Cù Lao Chàm hoặc làng rau Trà Quế — yên bình và đẹp.</div></div>
+        <div class="tip-card"><div class="tip-icon">👗</div><div class="tip-title">May đồ tại Hội An</div><div class="tip-desc">Phố Cổ có hàng trăm tiệm may — đặt may trong 24–48 tiếng với giá hợp lý.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reverse reveal" id="hue-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/CODOHUE1.jpg" data-alt="Cố đô Huế 1" data-caption="Nguồn: Vacation Travel">
+          <img src="images/CODOHUE1.jpg" alt="Cố đô Huế 1" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/CODOHUE2.jpg" data-alt="Cố đô Huế 2" data-caption="Nguồn: Booking Tour">
+          <img src="images/CODOHUE2.jpg" alt="Cố đô Huế 2" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/CODOHUE3.jpg" data-alt="Cố đô Huế 3" data-caption="Nguồn: Traveloka">
+          <img src="images/CODOHUE3.jpg" alt="Cố đô Huế 3" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 02 • Cố Đô Huế</div>
+      <h2 class="detail-title">Cố Đô Huế</h2>
+      <p class="detail-slogan">✦ Kinh thành cuối cùng, nơi triều đại ngủ yên giữa khói nhang. ✦</p>
+      <p class="detail-body">Đại Nội Huế — 500 héc-ta cung điện — là nơi 13 vị vua Nguyễn ngồi trị vì suốt 143 năm. Hàng cột son đỏ, mái ngói hoàng lưu ly vàng óng, những khoảng sân rộng với cây cổ thụ nghiêng bóng — tất cả vẫn còn đó, dù đã trải qua hai cuộc chiến.</p>
+      <p class="detail-body">Bảy lăng tẩm hoàng đế dọc sông Hương, mỗi lăng mang phong cách riêng phản ánh cá tính người nằm xuống. Lăng Tự Đức thơ mộng giữa rừng thông; lăng Khải Định hoa lệ kết hợp Đông–Tây; lăng Minh Mạng uy nghi đối xứng tuyệt đối.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Ẩm thực Huế được xếp hạng tinh tế nhất Việt Nam — không phải cầu kỳ mà vì nghệ thuật cân bằng hương vị: cay nhưng thanh, mặn nhưng không gắt. Hãy thử bún bò Huế thực sự lúc 6h sáng tại các quán vỉa hè — đó mới là trải nghiệm đích thực.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🚢</div><div class="tip-title">Thuyền rồng sông Hương</div><div class="tip-desc">Đi thuyền rồng trên sông Hương buổi chiều — nghe ca Huế trực tiếp dưới ánh nến.</div></div>
+        <div class="tip-card"><div class="tip-icon">🎭</div><div class="tip-title">Festival Huế</div><div class="tip-desc">Festival Huế tổ chức 2 năm/lần (năm chẵn) — lễ hội nghệ thuật lớn nhất Việt Nam.</div></div>
+        <div class="tip-card"><div class="tip-icon">🏯</div><div class="tip-title">Vé tham quan</div><div class="tip-desc">Mua vé tổng hợp Đại Nội + 3 lăng — tiết kiệm hơn mua lẻ từng điểm.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reveal" id="danang-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/cauvang1.jpg" data-alt="Cầu vàng 1" data-caption="Nguồn: VnExpress">
+          <img src="images/cauvang1.jpg" alt="Cầu vàng 1" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/cauvang2.jpg" data-alt="Cầu vàng 2" data-caption="Nguồn: Pullman Danang Beach Resort">
+          <img src="images/cauvang2.jpg" alt="Cầu vàng 2" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/cauvang3.jpg" data-alt="Cầu vàng 3" data-caption="Nguồn: Sun Group">
+          <img src="images/cauvang3.jpg" alt="Cầu vàng 3" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 03 • Đà Nẵng &amp; Cầu Vàng</div>
+      <h2 class="detail-title">Đà Nẵng &amp;<br>Cầu Vàng</h2>
+      <p class="detail-slogan">✦ Nơi đôi bàn tay khổng lồ nâng bạn lên tận mây. ✦</p>
+      <p class="detail-body">Đà Nẵng là điểm đến hoàn hảo nhất Việt Nam xét về mặt tiện ích: biển Mỹ Khê cách trung tâm 15 phút, Hội An cách 30 phút, Bà Nà Hills cách 1 tiếng, Huế cách 2 tiếng. Bạn có thể cắm ở Đà Nẵng và khám phá toàn bộ miền Trung.</p>
+      <p class="detail-body">Cầu Vàng được tạo ra từ lưới thép và đất sét để trông như đá rêu cổ xưa — kỹ thuật điêu khắc tốn gần 2 năm. Ảnh đẹp nhất khi mây ở mức 1.200–1.400m (tháng 3–8). Và nhớ: cầu dài 150m, ở độ cao 1.414m, được đỡ bởi đôi bàn tay khổng lồ rộng 22m.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Bãi biển Mỹ Khê từng được Forbes bình chọn vào top 6 bãi biển đẹp nhất hành tinh. Đặc biệt, từ tháng 6–8, bạn có thể bơi lúc 6h sáng khi bãi biển vắng hoàn toàn và nước biển trong vắt nhất.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🌁</div><div class="tip-title">Cầu Vàng đẹp nhất</div><div class="tip-desc">Tháng 3–8 có mây ổn định nhất. Đi sáng sớm để tránh đông khách và có mây đẹp.</div></div>
+        <div class="tip-card"><div class="tip-icon">🌉</div><div class="tip-title">Cầu Rồng về đêm</div><div class="tip-desc">Thứ 7 và CN, 21h: Cầu Rồng phun lửa và nước — show miễn phí đẹp nhất Đà Nẵng.</div></div>
+        <div class="tip-card"><div class="tip-icon">🍣</div><div class="tip-title">Hải sản tươi</div><div class="tip-desc">Chợ Hàn và khu Mỹ Khê: hải sản tươi sống giá rẻ — ăn tôm hùm, cua biển, ghẹ ngay tại chỗ.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="region-food" data-region="trung">
+  <div class="region-food-inner">
+    <div class="food-section-header reveal">
+      <div>
+        <div class="section-tag tag-trung">🌸 Ẩm thực Miền Trung</div>
+        <h2 class="food-section-title">Cay mà thanh, <span>tinh tế như Cố đô</span></h2>
+      </div>
+      <p class="food-section-sub">Ẩm thực miền Trung nức tiếng cả nước vì sự cân bằng hoàn hảo — cay nhưng không rát, mặn nhưng không gắt, ngọt nhưng không lẫy.</p>
+    </div>
+    <div class="region-food-grid">
+      <div class="food-item reveal">
+        <div class="food-item-img"><img src="images/bunbo.jpg" alt="Bún bò Huế" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: Gia vị VIPEP</div>
+          <div class="food-item-name">Bún Bò Huế</div>
+          <p class="food-item-desc">Nước dùng đỏ sậm từ sả và mắm ruốc Huế, cay mà thơm. Chả cua, giò heo, huyết đông — mỗi thứ một vị tạo bản hòa tấu hoàn hảo. Ăn cùng rau sống, bắp chuối thái mỏng và chanh tươi.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-1">
+        <div class="food-item-img"><img src="images/caolau.jpg" alt="Cao lầu Hội An" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Cao Lầu Hội An</div>
+          <p class="food-item-desc">Sợi mì vàng ươm dai giòn, thịt xá xíu thái lát, tép mỡ giòn rụm, rau thơm tươi — tất cả hòa quyện trong nước sốt đặc sánh. Chỉ ngon đích thực khi nấu bằng nước giếng Bá Lễ cổ trong Phố Cổ.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-2">
+        <div class="food-item-img"><img src="images/banhmi.jpg" alt="Bánh mì Hội An" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Bánh Mì Phương</div>
+          <p class="food-item-desc">Anthony Bourdain gọi đây là "bánh mì sandwich ngon nhất thế giới." Vỏ bánh giòn tan, nhân thập cẩm: pate gan, thịt nguội, dưa leo, hành tây ngâm chua ngọt và ớt tươi. Hàng quán nhỏ, nhưng tên tuổi lừng lẫy khắp thế giới.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">🇻🇳 Tuyệt Sắc Việt Nam</div>
+        <p class="footer-brand-desc">Dài hơn một chuyến đi, sâu hơn một tấm ảnh, gần hơn một giấc mơ.</p>
+        <div class="footer-school-info">
+          <a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener" class="footer-school-link">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+            Trường THPT Trương Chinh — TP.HCM
+          </a>
+          <div class="footer-group-info">📚 Dự án học sinh lớp 12 · Nhóm 8 · Lớp 12C06 · Tháng 03/2025</div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/17Do3X6pBA/" target="_blank" rel="noopener" aria-label="Facebook Trưởng nhóm">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Trưởng nhóm
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Khám phá</div>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mien-bac.html">Miền Bắc</a></li>
+          <li><a href="mien-trung.html">Miền Trung</a></li>
+          <li><a href="mien-nam.html">Miền Nam</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Địa danh Trung</div>
+        <ul>
+          <li><a href="#hoian">Phố Cổ Hội An</a></li>
+          <li><a href="#hue">Cố Đô Huế</a></li>
+          <li><a href="#danang">Đà Nẵng &amp; Cầu Vàng</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Ẩm thực</div>
+        <ul>
+          <li><a href="#">Bún bò Huế</a></li>
+          <li><a href="#">Cao lầu Hội An</a></li>
+          <li><a href="#">Bánh mì Phương</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2025 Tuyệt Sắc Việt Nam · Nhóm 8 · Lớp 12C06</span>
+        <span><a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener">THPT Trương Chinh</a> · GV: Cô Nguyễn Thị Thanh Lệ</span>
+      </div>
+      <div class="footer-next-link">
+        <a href="mien-bac.html">← Miền Bắc</a>
+        <a href="mien-nam.html">Miền Nam →</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/filter.js"></script>
+</body>
+</html>

@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miền Nam | Tuyệt Sắc Việt Nam — Vùng đất phóng khoáng · Nhóm 8</title>
+  <meta name="description" content="Khám phá Miền Nam Việt Nam — TP. Hồ Chí Minh sôi động, chợ nổi Cái Răng bình minh trên sông và đảo ngọc Phú Quốc.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/region.css">
+</head>
+<body class="page-nam">
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lb-close" aria-label="Đóng">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Ảnh trước">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Ảnh sau">›</button>
+    <img id="lb-img" src="" alt="">
+    <div class="lightbox-caption" id="lb-caption"></div>
+  </div>
+</div>
+
+<nav class="navbar region-nam" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span>🇻🇳</span><span>Tuyệt Sắc Việt Nam</span></a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+      <li><a href="mien-bac.html" class="nav-link nav-link-bac"><span class="nav-dot"></span>Miền Bắc</a></li>
+      <li><a href="mien-trung.html" class="nav-link nav-link-trung"><span class="nav-dot"></span>Miền Trung</a></li>
+      <li><a href="mien-nam.html" class="nav-link active nav-link-nam"><span class="nav-dot"></span>Miền Nam</a></li>
+      <li><a href="thanh-vien.html" class="nav-link nav-link-members">👥 Thành viên</a></li>
+      <li><a href="#destinations" class="nav-link nav-cta">Xem địa danh ↓</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="region-hero" data-region="nam">
+  <div class="region-hero-bg" style="background-image:url('images/tphcm3.jpg')"></div>
+  <div class="region-hero-overlay"></div>
+  <div class="region-hero-content">
+    <div class="region-hero-inner">
+      <nav class="region-breadcrumb"><a href="index.html">Trang chủ</a><span class="breadcrumb-sep">›</span><span>Miền Nam</span></nav>
+      <span class="region-hero-tag tag-bg-nam">🌿 Miền Nam Việt Nam</span>
+      <h1 class="region-hero-title">Miền Nam</h1>
+      <p class="region-hero-subtitle">Nguồn: Báo Người Lao Động</p>
+    </div>
+  </div>
+</section>
+
+<div class="filter-section">
+  <div class="filter-inner">
+    <span class="filter-label">Lọc:</span>
+    <button class="filter-btn active" data-filter="all">🗺 Tất cả</button>
+    <button class="filter-btn" data-filter="bien-dao">🏖 Biển &amp; Đảo</button>
+    <button class="filter-btn" data-filter="nui-rung">🏔 Núi &amp; Rừng</button>
+    <button class="filter-btn" data-filter="di-san">🏛 Di sản</button>
+    <button class="filter-btn" data-filter="song-ho">🛶 Sông &amp; Hồ</button>
+  </div>
+</div>
+
+<div class="region-intro" data-region="nam">
+  <div class="region-intro-inner">
+    <p class="region-intro-text reveal">"Miền Nam Việt Nam là vùng đất mà cuộc sống không bao giờ đứng yên — người Sài Gòn ăn sáng lúc 5h, người miền Tây đã họp chợ trên sông từ 4h. Đây là nơi năng lượng không bao giờ cạn."</p>
+  </div>
+</div>
+
+<div class="best-time-section" data-region="nam">
+  <div class="best-time-inner reveal">
+    <div class="best-time-title">Thời điểm đẹp nhất để đến Miền Nam</div>
+    <div class="month-bar">
+      <div class="month-item peak" data-month="1"><span class="month-name">T.1</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="2"><span class="month-name">T.2</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="3"><span class="month-name">T.3</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="4"><span class="month-name">T.4</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item good" data-month="5"><span class="month-name">T.5</span><span class="month-status">Khá</span></div>
+      <div class="month-item low" data-month="6"><span class="month-name">T.6</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="7"><span class="month-name">T.7</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="8"><span class="month-name">T.8</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="9"><span class="month-name">T.9</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="10"><span class="month-name">T.10</span><span class="month-status">Mưa</span></div>
+      <div class="month-item good" data-month="11"><span class="month-name">T.11</span><span class="month-status">Khá</span></div>
+      <div class="month-item peak" data-month="12"><span class="month-name">T.12</span><span class="month-status">★ Tốt</span></div>
+    </div>
+    <div class="best-time-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--nam)"></div>Mùa khô — đẹp nhất (T.12–T.4)</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--nam-light)"></div>Khá đẹp</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--off-white);border:1px solid var(--border)"></div>Mùa mưa</div>
+    </div>
+  </div>
+</div>
+
+<section class="cards-section" id="destinations" data-region="nam">
+  <div class="cards-grid">
+    <article class="dest-card reveal" data-category="di-san" id="saigon">
+      <div class="card-img-wrap">
+        <img src="images/tphcm1.jpg" alt="Skyline TP HCM về đêm" loading="lazy">
+        <span class="season-badge" data-months="12,1,2,3,4"></span>
+        <span class="card-category-tag">Nguồn: baotintuc.vn</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 01 — Miền Nam</div>
+        <h2 class="card-title">TP. Hồ Chí Minh</h2>
+        <p class="card-slogan">Thành phố không ngủ — nơi ký ức lịch sử và nhịp đập tương lai cùng đập một tim.</p>
+        <p class="card-desc">10 triệu người, 10 triệu xe máy, hàng nghìn quán ăn vỉa hè và những tòa cao ốc kính phản chiếu mây trời — Sài Gòn là đô thị năng động nhất Đông Nam Á.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Người Sài Gòn biến giờ <strong>kẹt xe thành cơ hội ăn uống</strong> trên vỉa hè — văn hóa độc đáo nhất châu Á.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#saigon-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 TP. Hồ Chí Minh</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-1" data-category="song-ho" id="cairang">
+      <div class="card-img-wrap">
+        <img src="images/cho-cai-rang1.png" alt="Chợ nổi Cái Răng Cần Thơ" loading="lazy">
+        <span class="season-badge" data-months="12,1,2,3,4,5"></span>
+        <span class="card-category-tag">Nguồn: Danatravel</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 02 — Miền Nam</div>
+        <h2 class="card-title">Chợ Nổi Cái Răng</h2>
+        <p class="card-slogan">Nơi cuộc sống trôi theo dòng nước — chợ họp trên sông từ lúc 5h sáng.</p>
+        <p class="card-desc">Hàng trăm ghe xuồng chật kín mặt sông Cần Thơ, người ta mua bán rau củ trái cây trực tiếp từ thuyền sang thuyền — mỗi ghe treo sẵn mẫu hàng trên cọc trước mũi thuyền.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>ĐBSCL cung cấp hơn <strong>50% sản lượng gạo</strong> và 70% trái cây của cả Việt Nam. Đây là "bát cơm" của quốc gia.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#cairang-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Cần Thơ</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-2" data-category="bien-dao" id="phuquoc">
+      <div class="card-img-wrap">
+        <img src="images/phu-quoc1.jpg" alt="Bãi biển Phú Quốc" loading="lazy">
+        <span class="season-badge" data-months="11,12,1,2,3,4"></span>
+        <span class="card-category-tag">Nguồn: VnExpress</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 03 — Miền Nam</div>
+        <h2 class="card-title">Phú Quốc</h2>
+        <p class="card-slogan">Ngọc xanh Biển Đông — hòn đảo lớn nhất Việt Nam, thiên đường chưa kịp già.</p>
+        <p class="card-desc">Nước biển trong đến nhìn thấy cá bơi ở độ sâu 5–6m, rừng nguyên sinh phủ hơn 50% diện tích đảo, hoàng hôn đỏ rực trực tiếp trước mặt — Phú Quốc là kho báu chưa được khai thác hết.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Nước mắm Phú Quốc là loại <strong>duy nhất ĐNA được EU bảo hộ</strong> Chỉ dẫn Địa lý.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#phuquoc-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Kiên Giang</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="detail-section" data-region="nam">
+  <div class="detail-block reveal" id="saigon-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/tphcm1.jpg" data-alt="Sài Gòn đêm" data-caption="Nguồn: baotintuc.vn">
+          <img src="images/tphcm1.jpg" alt="Sài Gòn về đêm" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/tphcm2.jpg" data-alt="Nhà thờ Đức Bà" data-caption="Nguồn: Thư Viện Pháp Luật">
+          <img src="images/tphcm2.jpg" alt="Nhà thờ Đức Bà Sài Gòn" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/tphcm3.jpg" data-alt="Vỉa hè Sài Gòn" data-caption="Nguồn: Báo Người Lao Động">
+          <img src="images/tphcm3.jpg" alt="Vỉa hè Sài Gòn" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 01 • TP. Hồ Chí Minh</div>
+      <h2 class="detail-title">TP. Hồ Chí Minh</h2>
+      <p class="detail-slogan">✦ Thành phố không ngủ — nơi ký ức và tương lai cùng đập một nhịp tim. ✦</p>
+      <p class="detail-body">Sài Gòn — người dân vẫn gọi bằng cái tên cũ ấy. Ban ngày tòa cao ốc kính phản chiếu mây trời; ban đêm xe máy chảy như sông sáng rực. Giữa hỗn độn hào hứng ấy, Nhà thờ Đức Bà neo-Gothic từ 1880, Bưu điện Trung tâm, Dinh Độc Lập như trang sách lịch sử mở ra trước mắt.</p>
+      <p class="detail-body">Và rồi có những con hẻm Sài Gòn — mê cung ẩn sau mặt tiền đường — nơi bạn tìm thấy quán cà phê thiết kế tinh tế, bích họa đầy màu sắc và người dân uống cà phê đen từ 5h sáng với sự thư thái chỉ người Sài Gòn mới có.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">TP. Hồ Chí Minh có hơn 10 triệu xe máy — nhiều hơn dân số nhiều quốc gia. Nhưng điều thú vị nhất: người Sài Gòn biến giờ kẹt xe thành cơ hội ăn uống vỉa hè và tám chuyện — đây là văn hóa vỉa hè sầm uất nhất Đông Nam Á.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🏍</div><div class="tip-title">Xe máy ôm xuyên hẻm</div><div class="tip-desc">Thuê xe máy hoặc đi Grab khám phá các con hẻm bí ẩn của quận 3, 4, 6 — trải nghiệm Sài Gòn thực sự.</div></div>
+        <div class="tip-card"><div class="tip-icon">🌆</div><div class="tip-title">Ngắm hoàng hôn</div><div class="tip-desc">Tầng thượng Landmark 81 (tòa cao nhất VN) — view toàn thành phố lúc golden hour.</div></div>
+        <div class="tip-card"><div class="tip-icon">🛕</div><div class="tip-title">Lịch sử &amp; Bảo tàng</div><div class="tip-desc">Bảo tàng Chứng tích Chiến tranh — một trong những bảo tàng gây xúc động nhất thế giới.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reverse reveal" id="cairang-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/cho-cai-rang1.png" data-alt="Chợ nổi Cái Răng từ trên cao" data-caption="Nguồn: Danatravel">
+          <img src="images/cho-cai-rang1.png" alt="Chợ nổi Cái Răng" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/cho-cai-rang2.jpg" data-alt="Sông Cửu Long" data-caption="Nguồn: VietJetAir">
+          <img src="images/cho-cai-rang2.jpg" alt="Sông Cửu Long" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/cho-cai-rang3.jpg" data-alt="Vườn trái cây miền Tây" data-caption="Nguồn: baotintuc.vn">
+          <img src="images/cho-cai-rang3.jpg" alt="Vườn trái cây miền Tây" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 02 • Chợ Nổi Cái Răng</div>
+      <h2 class="detail-title">Chợ Nổi<br>Cái Răng</h2>
+      <p class="detail-slogan">✦ Nơi cuộc sống trôi theo dòng nước — chợ họp trên sông từ lúc 5h sáng. ✦</p>
+      <p class="detail-body">Khi thuyền nhỏ len lỏi qua mê cung sông rạch, bạn thấy người phụ nữ đội nón lá nấu bún riêu ngay trên thuyền bán cho khách qua đường — mà "đường" ở đây là con sông. Mùi cơm sôi, mùi trái cây chín, mùi bùn sông hòa quyện tạo ra một mùi riêng không tìm thấy ở đâu khác.</p>
+      <p class="detail-body">Mỗi thuyền treo sẵn mẫu hàng trên cọc trước mũi — cách "quảng cáo" độc đáo chỉ có ở miền sông nước. Thuyền chở dừa treo dừa, thuyền chở dưa hấu treo dưa hấu — hệ thống ký hiệu đơn giản mà hiệu quả qua hàng trăm năm.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Đồng bằng sông Cửu Long cung cấp hơn 50% gạo và 70% trái cây của cả Việt Nam. Chợ nổi Cái Răng được công nhận Di sản Văn hóa phi vật thể Quốc gia năm 2016. Đi từ 5h–7h sáng để thấy chợ tấp nập nhất.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🕔</div><div class="tip-title">Đi lúc 5h sáng</div><div class="tip-desc">Chợ họp từ 5h–9h sáng. Đến lúc 6h để thấy đông nhất và ánh sáng bình minh đẹp nhất.</div></div>
+        <div class="tip-card"><div class="tip-icon">☕</div><div class="tip-title">Cà phê trên thuyền</div><div class="tip-desc">Thuê thuyền nhỏ và mua cà phê đen ngay trên sông — trải nghiệm buổi sáng không thể quên.</div></div>
+        <div class="tip-card"><div class="tip-icon">🏡</div><div class="tip-title">Homestay miền Tây</div><div class="tip-desc">Ở nhà dân ven sông 1–2 đêm để trải nghiệm cuộc sống sông nước thực sự.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reveal" id="phuquoc-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/phu-quoc1.jpg" data-alt="Bãi Sao Phú Quốc" data-caption="Nguồn: VnExpress">
+          <img src="images/phu-quoc1.jpg" alt="Phú Quốc bãi biển" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/phu-quoc2.jpg" data-alt="Rừng Phú Quốc" data-caption="Nguồn: VnExpress">
+          <img src="images/phu-quoc2.jpg" alt="Rừng Phú Quốc" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/phu-quoc3.jpg" data-alt="Hoàng hôn Phú Quốc" data-caption="Nguồn: Đông Tây Land">
+          <img src="images/phu-quoc3.jpg" alt="Hoàng hôn Phú Quốc" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 03 • Phú Quốc</div>
+      <h2 class="detail-title">Phú Quốc</h2>
+      <p class="detail-slogan">✦ Ngọc xanh Biển Đông — thiên đường chưa kịp già. ✦</p>
+      <p class="detail-body">Phú Quốc là hòn đảo mà thời gian dường như di chuyển chậm hơn. Nước biển trong đến mức nhìn thấy cá bơi ở độ sâu 5–6m. Rừng nguyên sinh phủ hơn 50% diện tích đảo với nhiều loài đặc hữu chỉ có ở đây. Bãi Sao — đẹp nhất đảo — có cát trắng mịn đến mức bước chân tạo ra tiếng kêu nhẹ.</p>
+      <p class="detail-body">Hoàng hôn ở Phú Quốc có màu đỏ rực vì đảo nằm hướng Tây — mặt trời lặn thẳng trước mắt bạn, đổ màu cam đỏ lên toàn mặt biển. Và nhà hàng hải sản dọc bờ biển phía Tây — chỗ ngồi nhìn ra biển, gọi tôm hùm nguyên con với giá chỉ bằng một phần ba Hà Nội.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Nước mắm Phú Quốc là loại nước mắm duy nhất Đông Nam Á được EU bảo hộ Chỉ dẫn Địa lý — chỉ nước mắm sản xuất đúng tại Phú Quốc mới được mang tên đó xuất khẩu sang châu Âu. Bãi Sao từng được CNN Travel bình chọn top bãi biển đẹp nhất châu Á.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🌅</div><div class="tip-title">Hoàng hôn tuyệt đẹp</div><div class="tip-desc">17h30–18h30: ngồi ở bãi biển phía Tây (Dương Đông, Ông Lang) để xem hoàng hôn đỏ rực.</div></div>
+        <div class="tip-card"><div class="tip-icon">🤿</div><div class="tip-title">Lặn biển</div><div class="tip-desc">Quần đảo An Thới phía Nam đảo — san hô nhiều màu sắc, nước trong nhất Việt Nam.</div></div>
+        <div class="tip-card"><div class="tip-icon">🐟</div><div class="tip-title">Chợ đêm Phú Quốc</div><div class="tip-desc">Chợ đêm Dương Đông: hải sản tươi nguyên chợ, giá rẻ bằng 1/3 TP. HCM. Ghẹ, mực, tôm hùm.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="region-food" data-region="nam">
+  <div class="region-food-inner">
+    <div class="food-section-header reveal">
+      <div>
+        <div class="section-tag tag-nam">🌿 Ẩm thực Miền Nam</div>
+        <h2 class="food-section-title">Ngọt ngào như <span>đất phương Nam</span></h2>
+      </div>
+      <p class="food-section-sub">Ẩm thực miền Nam mang vị ngọt tự nhiên đặc trưng — từ nước cốt dừa, đường thốt nốt đến rau sống tươi mát của vùng nhiệt đới.</p>
+    </div>
+    <div class="region-food-grid">
+      <div class="food-item reveal">
+        <div class="food-item-img"><img src="images/hu-tieu.jpg" alt="Hủ tiếu Nam Vang" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Hủ Tiếu Nam Vang</div>
+          <p class="food-item-desc">Nước dùng ngọt tự nhiên từ xương lợn và tôm khô. Sợi hủ tiếu giòn dai, thịt bằm mịn, gan và tôm tươi. Ăn khô hay nước đều ngon — thêm giá đỗ và tương đen để đúng điệu miền Nam.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-1">
+        <div class="food-item-img"><img src="images/banh-xeo.jpg" alt="Bánh xèo miền Nam" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: Traveloka</div>
+          <div class="food-item-name">Bánh Xèo Miền Nam</div>
+          <p class="food-item-desc">Tiếng xèo khi bột gạo pha nước cốt dừa đổ vào chảo nóng — đó là âm thanh đặc trưng nhất miền Nam. Vỏ bánh giòn rụm, nhân tôm thịt nấm, cuốn với rau sống và chấm nước mắm chua ngọt.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-2">
+        <div class="food-item-img"><img src="images/com-tam.jpg" alt="Cơm tấm Sài Gòn" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Cơm Tấm Sài Gòn</div>
+          <p class="food-item-desc">Cơm gạo tấm hạt nhỏ thơm bùi, sườn nướng than hoa bóng mỡ, trứng ốp la và chả trứng hấp. Chan nước mắm pha tỏi ớt ngọt chua — đây là bữa sáng quốc dân của 10 triệu người Sài Gòn mỗi ngày.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">🇻🇳 Tuyệt Sắc Việt Nam</div>
+        <p class="footer-brand-desc">Dài hơn một chuyến đi, sâu hơn một tấm ảnh, gần hơn một giấc mơ.</p>
+        <div class="footer-school-info">
+          <a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener" class="footer-school-link">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+            Trường THPT Trương Chinh — TP.HCM
+          </a>
+          <div class="footer-group-info">📚 Dự án học sinh lớp 12 · Nhóm 8 · Lớp 12C06 · Tháng 03/2025</div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/17Do3X6pBA/" target="_blank" rel="noopener" aria-label="Facebook Trưởng nhóm">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Trưởng nhóm
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Khám phá</div>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mien-bac.html">Miền Bắc</a></li>
+          <li><a href="mien-trung.html">Miền Trung</a></li>
+          <li><a href="mien-nam.html">Miền Nam</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Địa danh Nam</div>
+        <ul>
+          <li><a href="#saigon">TP. Hồ Chí Minh</a></li>
+          <li><a href="#cairang">Chợ Nổi Cái Răng</a></li>
+          <li><a href="#phuquoc">Đảo Phú Quốc</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Ẩm thực</div>
+        <ul>
+          <li><a href="#">Hủ tiếu Nam Vang</a></li>
+          <li><a href="#">Bánh xèo miền Nam</a></li>
+          <li><a href="#">Cơm tấm Sài Gòn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2025 Tuyệt Sắc Việt Nam · Nhóm 8 · Lớp 12C06</span>
+        <span><a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener">THPT Trương Chinh</a> · GV: Cô Nguyễn Thị Thanh Lệ</span>
+      </div>
+      <div class="footer-next-link">
+        <a href="mien-bac.html">← Miền Bắc</a>
+        <a href="mien-trung.html">← Miền Trung</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/filter.js"></script>
+</body>
+</html>

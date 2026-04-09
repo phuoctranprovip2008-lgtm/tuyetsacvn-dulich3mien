@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Miền Bắc | Tuyệt Sắc Việt Nam — Nhóm 8 · 12C06</title>
+  <meta name="description" content="Khám phá Miền Bắc Việt Nam — Vịnh Hạ Long huyền bí, ruộng bậc thang Mù Cang Chải dát vàng và Tràng An kỳ vĩ.">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/region.css">
+</head>
+<body class="page-bac">
+
+<div class="scroll-progress" id="scroll-progress"></div>
+<button class="back-to-top" id="back-to-top" aria-label="Lên đầu trang">↑</button>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Xem ảnh lớn">
+  <div class="lightbox-inner">
+    <button class="lightbox-close" id="lb-close" aria-label="Đóng">×</button>
+    <button class="lightbox-nav lightbox-prev" id="lb-prev" aria-label="Ảnh trước">‹</button>
+    <button class="lightbox-nav lightbox-next" id="lb-next" aria-label="Ảnh sau">›</button>
+    <img id="lb-img" src="" alt="">
+    <div class="lightbox-caption" id="lb-caption"></div>
+  </div>
+</div>
+
+<nav class="navbar region-bac" id="navbar">
+  <div class="nav-container">
+    <a href="index.html" class="nav-logo"><span>🇻🇳</span><span>Tuyệt Sắc Việt Nam</span></a>
+    <ul class="nav-menu" id="nav-menu">
+      <li><a href="index.html" class="nav-link">Trang chủ</a></li>
+      <li><a href="mien-bac.html" class="nav-link active nav-link-bac"><span class="nav-dot"></span>Miền Bắc</a></li>
+      <li><a href="mien-trung.html" class="nav-link nav-link-trung"><span class="nav-dot"></span>Miền Trung</a></li>
+      <li><a href="mien-nam.html" class="nav-link nav-link-nam"><span class="nav-dot"></span>Miền Nam</a></li>
+      <li><a href="thanh-vien.html" class="nav-link nav-link-members">👥 Thành viên</a></li>
+      <li><a href="#destinations" class="nav-link nav-cta">Xem địa danh ↓</a></li>
+    </ul>
+    <button class="hamburger" id="hamburger" aria-label="Mở menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</nav>
+
+<section class="region-hero" data-region="bac">
+  <div class="region-hero-bg" style="background-image:url('images/sapa1.jpg')"></div>
+  <div class="region-hero-overlay"></div>
+  <div class="region-hero-content">
+    <div class="region-hero-inner">
+      <nav class="region-breadcrumb"><a href="index.html">Trang chủ</a><span class="breadcrumb-sep">›</span><span>Miền Bắc</span></nav>
+      <span class="region-hero-tag tag-bg-bac">🏔 Miền Bắc Việt Nam</span>
+      <h1 class="region-hero-title">Miền Bắc</h1>
+      <p class="region-hero-subtitle">Nguồn: PYS Travel</p>
+    </div>
+  </div>
+</section>
+
+<div class="filter-section">
+  <div class="filter-inner">
+    <span class="filter-label">Lọc:</span>
+    <button class="filter-btn active" data-filter="all">🗺 Tất cả</button>
+    <button class="filter-btn" data-filter="bien-dao">🏖 Biển &amp; Đảo</button>
+    <button class="filter-btn" data-filter="nui-rung">🏔 Núi &amp; Rừng</button>
+    <button class="filter-btn" data-filter="di-san">🏛 Di sản</button>
+    <button class="filter-btn" data-filter="song-ho">🛶 Sông &amp; Hồ</button>
+  </div>
+</div>
+
+<div class="region-intro" data-region="bac">
+  <div class="region-intro-inner">
+    <p class="region-intro-text reveal">"Miền Bắc Việt Nam — nơi núi non chạm mây, nơi lịch sử nghìn năm vẫn còn thở trong từng hòn đá, mái đình và điệu hát quan họ buổi chiều tà."</p>
+  </div>
+</div>
+
+<div class="best-time-section" data-region="bac">
+  <div class="best-time-inner reveal">
+    <div class="best-time-title">Thời điểm đẹp nhất để đến Miền Bắc</div>
+    <div class="month-bar">
+      <div class="month-item low" data-month="1"><span class="month-name">T.1</span><span class="month-status">Lạnh</span></div>
+      <div class="month-item low" data-month="2"><span class="month-name">T.2</span><span class="month-status">Lạnh</span></div>
+      <div class="month-item good" data-month="3"><span class="month-name">T.3</span><span class="month-status">Đẹp</span></div>
+      <div class="month-item good" data-month="4"><span class="month-name">T.4</span><span class="month-status">Đẹp</span></div>
+      <div class="month-item low" data-month="5"><span class="month-name">T.5</span><span class="month-status">Nóng</span></div>
+      <div class="month-item low" data-month="6"><span class="month-name">T.6</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="7"><span class="month-name">T.7</span><span class="month-status">Mưa</span></div>
+      <div class="month-item low" data-month="8"><span class="month-name">T.8</span><span class="month-status">Mưa</span></div>
+      <div class="month-item peak" data-month="9"><span class="month-name">T.9</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="10"><span class="month-name">T.10</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item peak" data-month="11"><span class="month-name">T.11</span><span class="month-status">★ Tốt</span></div>
+      <div class="month-item good" data-month="12"><span class="month-name">T.12</span><span class="month-status">Đẹp</span></div>
+    </div>
+    <div class="best-time-legend">
+      <div class="legend-item"><div class="legend-dot" style="background:var(--bac)"></div>Tháng đẹp nhất</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--bac-light)"></div>Khá đẹp</div>
+      <div class="legend-item"><div class="legend-dot" style="background:var(--off-white);border:1px solid var(--border)"></div>Không lý tưởng</div>
+    </div>
+  </div>
+</div>
+
+<section class="cards-section" id="destinations" data-region="bac">
+  <div class="cards-grid">
+    <article class="dest-card reveal" data-category="bien-dao" id="halong">
+      <div class="card-img-wrap">
+        <img src="images/vinhhalong1.jpg" alt="Vịnh Hạ Long" loading="lazy">
+        <span class="season-badge" data-months="10,11,12,3,4"></span>
+        <span class="card-category-tag">Nguồn: VnExpress</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 01 — Miền Bắc</div>
+        <h2 class="card-title">Vịnh Hạ Long</h2>
+        <p class="card-slogan">Nơi rồng hạ cánh, thiên nhiên đã vẽ nên kiệt tác.</p>
+        <p class="card-desc">Hơn 1.900 hòn đảo karst nhô lên từ biển xanh ngọc bích, mỗi hòn đảo một hình dáng kỳ lạ tạo nên một trong những kỳ quan thiên nhiên đẹp nhất thế giới.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>UNESCO công nhận <strong>2 lần</strong> — năm 1994 và 2000. Kỷ lục cực hiếm trên toàn cầu.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#halong-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Quảng Ninh</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-1" data-category="nui-rung" id="sapa">
+      <div class="card-img-wrap">
+        <img src="images/sapa1.jpg" alt="Ruộng bậc thang Mù Cang Chải" loading="lazy">
+        <span class="season-badge" data-months="9,10"></span>
+        <span class="card-category-tag">Nguồn: PYS Travel</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 02 — Miền Bắc</div>
+        <h2 class="card-title">Sapa &amp; Mù Cang Chải</h2>
+        <p class="card-slogan">Nơi mây trắng chạm đất, người H'Mông dệt nên những mùa vàng.</p>
+        <p class="card-desc">Ruộng bậc thang uốn lượn vào lòng núi, sương mây bảng lảng quanh năm, bản làng dân tộc còn nguyên vẹn nét văn hóa truyền thống hàng trăm năm.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Ruộng bậc thang tạo ra <strong>hoàn toàn bằng sức người</strong>, không máy móc — qua nhiều thế hệ H'Mông.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#sapa-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Yên Bái · Lào Cai</span>
+        </div>
+      </div>
+    </article>
+
+    <article class="dest-card reveal reveal-delay-2" data-category="song-ho" id="ninhbinh">
+      <div class="card-img-wrap">
+        <img src="images/trangan1.jpg" alt="Tràng An Ninh Bình" loading="lazy">
+        <span class="season-badge" data-months="3,4,5,10,11"></span>
+        <span class="card-category-tag">Nguồn: Vntrip</span>
+      </div>
+      <div class="card-body">
+        <div class="card-number">Địa danh 03 — Miền Bắc</div>
+        <h2 class="card-title">Tràng An — Ninh Bình</h2>
+        <p class="card-slogan">Hạ Long trên cạn — nơi thuyền lướt qua mái núi và thời gian đứng yên.</p>
+        <p class="card-desc">Những dãy núi đá vôi cắm thẳng vào hồ, tạo mê cung kỳ ảo chỉ khám phá được bằng thuyền nan do người dân chèo bằng chân — kỹ thuật độc đáo chỉ có ở đây.</p>
+        <div class="card-callout">
+          <span class="card-callout-icon">💡</span>
+          <span>Di sản <strong>kép UNESCO duy nhất</strong> Đông Nam Á (2014) — bối cảnh quay <em>Kong: Skull Island</em>.</span>
+        </div>
+        <div class="card-footer">
+          <a href="#ninhbinh-detail" class="card-detail-btn">Xem chi tiết <span class="card-arrow-icon">→</span></a>
+          <span style="font-size:.78rem;color:var(--muted)">🧭 Ninh Bình</span>
+        </div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="detail-section" data-region="bac">
+  <div class="detail-block reveal" id="halong-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/vinhhalong1.jpg" data-alt="Vịnh Hạ Long bình minh" data-caption="Nguồn: VnExpress">
+          <img src="images/vinhhalong1.jpg" alt="Vịnh Hạ Long bình minh" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/vinhhalong2.jpg" data-alt="Vách đá karst" data-caption="Nguồn: Xanh SM">
+          <img src="images/vinhhalong2.jpg" alt="Vách đá karst Hạ Long" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/vinhhalong3.jpg" data-alt="Hang động Hạ Long" data-caption="Nguồn: Du Lịch Hạ Long">
+          <img src="images/vinhhalong3.jpg" alt="Hang động Hạ Long" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 01 • Vịnh Hạ Long</div>
+      <h2 class="detail-title">Vịnh Hạ Long</h2>
+      <p class="detail-slogan">✦ Nơi rồng hạ cánh, thiên nhiên đã vẽ nên kiệt tác. ✦</p>
+      <p class="detail-body">Vịnh Hạ Long trải rộng hơn 1.550 km² với gần 2.000 hòn đảo lớn nhỏ, mỗi đảo có tên gắn với hình dáng của mình: hòn Gà Chọi, hòn Đỉnh Hương, hòn Lã Vọng. Bên trong nhiều ngọn núi đá là những hang động kỳ vĩ như thiên đường dưới lòng đất — hang Sửng Sốt, hang Đầu Gỗ, hang Thiên Cung.</p>
+      <p class="detail-body">Khi đứng trên boong du thuyền lúc sáng sớm, nhìn màn sương trắng ôm lấy những cột đá khổng lồ nhô lên từ biển phẳng lặng, bạn sẽ hiểu tại sao câu chuyện về rồng vẫn còn sống trong tâm trí người Việt.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">UNESCO công nhận Vịnh Hạ Long là Di sản Thiên nhiên Thế giới hai lần (1994 và 2000) — kỷ lục hiếm có. Hãy thức dậy lúc 5h30 sáng khi ngủ du thuyền để bắt kịp cảnh bình minh đẹp nhất đời bạn.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">🚢</div><div class="tip-title">Du thuyền qua đêm</div><div class="tip-desc">Chọn tour 2–3 ngày ngủ trên du thuyền để trải nghiệm Hạ Long đầy đủ nhất.</div></div>
+        <div class="tip-card"><div class="tip-icon">📷</div><div class="tip-title">Góc ảnh đẹp nhất</div><div class="tip-desc">Hòn Gà Chọi lúc bình minh — đặc biệt đẹp khi có sương mù (tháng 10–12).</div></div>
+        <div class="tip-card"><div class="tip-icon">💰</div><div class="tip-title">Chi phí tham khảo</div><div class="tip-desc">Tour 2N1Đ: 1,5–3 triệu/người. Du thuyền cao cấp: 5–15 triệu/người.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reverse reveal" id="sapa-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/sapa1.jpg" data-alt="Mù Cang Chải toàn cảnh" data-caption="Nguồn: PYS Travel">
+          <img src="images/sapa1.jpg" alt="Mù Cang Chải" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/sapa2.jpg" data-alt="Bản làng Sapa" data-caption="Nguồn: Sinh Tour">
+          <img src="images/sapa2.jpg" alt="Bản làng Sapa" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/sapa3.jpg" data-alt="Sapa sương mù" data-caption="Nguồn: Vitracotour">
+          <img src="images/sapa3.jpg" alt="Sapa sương mù" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 02 • Sapa &amp; Mù Cang Chải</div>
+      <h2 class="detail-title">Sapa &amp;<br>Mù Cang Chải</h2>
+      <p class="detail-slogan">✦ Nơi mây trắng chạm đất, người H'Mông dệt nên những mùa vàng. ✦</p>
+      <p class="detail-body">Tháng 9–10, những thửa ruộng chuyển từ xanh sang vàng rực như dát vàng lên sườn núi. Đèo Khau Phạ — một trong tứ đại đỉnh đèo Việt Nam — là điểm nhìn toàn cảnh Mù Cang Chải đẹp đến nghẹt thở.</p>
+      <p class="detail-body">Sapa cách đó 100km là thị trấn mù sương quanh năm, nơi người H'Mông, Dao Đỏ, Tày, Giáy sống cộng cư. Chợ phiên cuối tuần bày bán thổ cẩm thêu tay, rượu táo mèo và bạc nén — một góc Việt Nam chưa thay đổi theo thời gian.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Fansipan — nóc nhà Đông Dương cao 3.143m — nằm ngay tại Sapa. Bạn có thể leo bộ 2 ngày hoặc đi cáp treo hiện đại nhất Đông Nam Á chỉ trong 15 phút.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">📅</div><div class="tip-title">Thời điểm vàng</div><div class="tip-desc">Tháng 9–10: lúa chín vàng. Tháng 12–1: có tuyết trên đỉnh Fansipan.</div></div>
+        <div class="tip-card"><div class="tip-icon">🥾</div><div class="tip-title">Trekking bản làng</div><div class="tip-desc">Thuê hướng dẫn viên người địa phương để đi đến các bản H'Mông chưa có điện.</div></div>
+        <div class="tip-card"><div class="tip-icon">🌡</div><div class="tip-title">Lưu ý thời tiết</div><div class="tip-desc">Mang áo rét kể cả mùa hè — đêm ở Sapa có thể xuống dưới 10°C.</div></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="detail-block reveal" id="ninhbinh-detail">
+    <div class="detail-img-wrap">
+      <div class="detail-gallery">
+        <div class="gallery-item" data-src="images/trangan1.jpg" data-alt="Tràng An" data-caption="Nguồn: Vntrip">
+          <img src="images/trangan1.jpg" alt="Tràng An Ninh Bình" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/trangan2.jpg" data-alt="Thuyền chèo Tràng An" data-caption="Nguồn: Traveloka">
+          <img src="images/trangan2.jpg" alt="Thuyền chèo Tràng An" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+        <div class="gallery-item" data-src="images/trangan3.jpg" data-alt="Chùa Bái Đính" data-caption="Nguồn: THE SINH TOUR">
+          <img src="images/trangan3.jpg" alt="Chùa Bái Đính" loading="lazy">
+          <div class="gallery-overlay"><span class="gallery-zoom-icon">🔍</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="detail-text">
+      <div class="detail-number">Địa danh 03 • Tràng An — Ninh Bình</div>
+      <h2 class="detail-title">Tràng An —<br>Ninh Bình</h2>
+      <p class="detail-slogan">✦ Hạ Long trên cạn — nơi thuyền lướt qua mái núi, thời gian đứng yên. ✦</p>
+      <p class="detail-body">Khi thuyền lướt qua những cửa hang tối, ánh sáng le lói cuối hang như cánh cửa dẫn vào thế giới khác. Ra khỏi hang là thung lũng ngập nước với sen hồng nở, cò trắng bay, núi đá phản chiếu trên mặt hồ như gương.</p>
+      <p class="detail-body">Ninh Bình còn có Tam Cốc (ba hang động trên sông Ngô Đồng), Cúc Phương (vườn quốc gia cổ nhất Việt Nam) và Chùa Bái Đính — ngôi chùa lớn nhất Đông Nam Á với 500 tượng La Hán bằng đá xanh.</p>
+      <div class="callout-box">
+        <span class="callout-icon-big">💡</span>
+        <div>
+          <span class="callout-title-text">Bạn có biết?</span>
+          <p class="callout-text">Tràng An là Di sản Văn hóa và Thiên nhiên kép duy nhất Đông Nam Á (UNESCO 2014). Đoàn phim Kong: Skull Island (2017) đã chọn nơi đây để quay vì cảnh quan "ngoài hành tinh" của nó.</p>
+        </div>
+      </div>
+      <div class="tips-grid">
+        <div class="tip-card"><div class="tip-icon">⛵</div><div class="tip-title">Tuyến thuyền đề xuất</div><div class="tip-desc">Tuyến 3 (Tràng An) dài nhất — 3 tiếng, đi qua 9 hang động, đẹp nhất.</div></div>
+        <div class="tip-card"><div class="tip-icon">🚴</div><div class="tip-title">Khám phá bằng xe đạp</div><div class="tip-desc">Thuê xe đạp khám phá vùng ngoại ô Ninh Bình — đường làng yên tĩnh, không có khách du lịch.</div></div>
+        <div class="tip-card"><div class="tip-icon">🌅</div><div class="tip-title">Ngắm hoàng hôn</div><div class="tip-desc">Leo lên đỉnh Hang Múa (hơn 500 bậc) để ngắm toàn cảnh Ninh Bình lúc xế chiều.</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="region-food" data-region="bac">
+  <div class="region-food-inner">
+    <div class="food-section-header reveal">
+      <div>
+        <div class="section-tag tag-bac">🍜 Ẩm thực Miền Bắc</div>
+        <h2 class="food-section-title">Tinh tế như <span>đất Kinh kỳ</span></h2>
+      </div>
+      <p class="food-section-sub">Ẩm thực miền Bắc nổi tiếng với nước dùng trong vắt, hương vị nhẹ nhàng thanh tao — nghệ thuật nấu ăn của đất Kinh thành ngàn năm.</p>
+    </div>
+    <div class="region-food-grid">
+      <div class="food-item reveal">
+        <div class="food-item-img"><img src="images/pho.jpg" alt="Phở Hà Nội" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Phở Hà Nội</div>
+          <p class="food-item-desc">Nước dùng trong vắt ninh từ xương bò 8–10 tiếng với gừng nướng và hành cháy. Bánh phở mỏng dai, thịt tái chín vừa. Đây là linh hồn của ẩm thực miền Bắc — đơn giản mà hoàn hảo.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-1">
+        <div class="food-item-img"><img src="images/buncha.jpg" alt="Bún chả" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Bún Chả</div>
+          <p class="food-item-desc">Thịt nướng than hoa thơm lừng, chả viên nướng vàng ươm, bún sợi nhỏ — chấm vào nước mắm pha chua ngọt với giấm bỗng. Món ăn trưa quốc dân của người Hà Nội.</p>
+        </div>
+      </div>
+      <div class="food-item reveal reveal-delay-2">
+        <div class="food-item-img"><img src="images/cha-ca-la-vong.jpg" alt="Chả cá Lã Vọng" loading="lazy"></div>
+        <div class="food-item-body">
+          <div class="food-item-tag">Nguồn: VnExpress</div>
+          <div class="food-item-name">Chả Cá Lã Vọng</div>
+          <p class="food-item-desc">Cá lăng ướp nghệ tươi và mắm tôm, nướng rồi rán lại trên chảo mỡ nóng tại bàn cùng thì là và hành lá xanh mướt. Một món ăn quý hiếm mà người Hà Nội tự hào nhất.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <div class="footer-brand-name">🇻🇳 Tuyệt Sắc Việt Nam</div>
+        <p class="footer-brand-desc">Dài hơn một chuyến đi, sâu hơn một tấm ảnh, gần hơn một giấc mơ.</p>
+        <div class="footer-school-info">
+          <a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener" class="footer-school-link">
+            <svg viewBox="0 0 20 20" width="14" height="14" fill="currentColor"><path d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zm5.99 7.176A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z"/></svg>
+            Trường THPT Trương Chinh — TP.HCM
+          </a>
+          <div class="footer-group-info">📚 Dự án học sinh lớp 12 · Nhóm 8 · Lớp 12C06 · Tháng 03/2025</div>
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/share/17Do3X6pBA/" target="_blank" rel="noopener" aria-label="Facebook Trưởng nhóm">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+            Trưởng nhóm
+          </a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Khám phá</div>
+        <ul>
+          <li><a href="index.html">Trang chủ</a></li>
+          <li><a href="mien-bac.html">Miền Bắc</a></li>
+          <li><a href="mien-trung.html">Miền Trung</a></li>
+          <li><a href="mien-nam.html">Miền Nam</a></li>
+          <li><a href="thanh-vien.html">Thành viên</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Địa danh Bắc</div>
+        <ul>
+          <li><a href="#halong">Vịnh Hạ Long</a></li>
+          <li><a href="#sapa">Sapa &amp; Mù Cang Chải</a></li>
+          <li><a href="#ninhbinh">Tràng An — Ninh Bình</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <div class="footer-col-title">Ẩm thực</div>
+        <ul>
+          <li><a href="#">Phở Hà Nội</a></li>
+          <li><a href="#">Bún chả</a></li>
+          <li><a href="#">Chả cá Lã Vọng</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="footer-bottom-left">
+        <span>© 2025 Tuyệt Sắc Việt Nam · Nhóm 8 · Lớp 12C06</span>
+        <span><a href="https://thpttruongchinh.hcm.edu.vn/homemb2" target="_blank" rel="noopener">THPT Trương Chinh</a> · GV: Cô Nguyễn Thị Thanh Lệ</span>
+      </div>
+      <div class="footer-next-link">
+        <a href="mien-trung.html">Miền Trung →</a>
+        <a href="mien-nam.html">Miền Nam →</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script src="js/filter.js"></script>
+</body>
+</html>
